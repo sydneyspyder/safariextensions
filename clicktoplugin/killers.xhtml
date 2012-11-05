@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="author" content="Marc Hoyois"/>
+	<title>ClickToPlugin HTML5 replacements</title>
+	<link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body id="top">
+<header>
+<h1>ClickToPlugin HTML5 replacements</h1>
+<nav>
+<h3 class="offscreen">Navigation</h3>
+<a href="../../">Home</a> &gt; <a href="./">ClickToPlugin &amp; ClickToFlash</a> &gt; <a>HTML5 replacements</a>
+<nav>
+<h4>Contents</h4>
+<ul>
+	<li><a href="#database">Get killers</a></li>
+	<li><a href="#add_killers">How to add killers</a></li>
+	<li><a href="#create_killers">How to create a killer</a></li>
+</ul>
+</nav>
+</nav>
+</header>
+
+<div id="intro">
+<p>To replace plug-ins by HTML5, ClickToPlugin uses independent Javascript objects called “killers”. A killer is a machine that transforms <a href="#plugin_data">plug-in data</a> into <a href="#media_data">media data</a>. ClickToPlugin has a number of built-in killers for popular audio and video services, but it also has the ability to load additional killers.</p>
+</div>
+
+<section id="database">
+<header>
+<h2>Get killers</h2>
+<div class="toplink"><a href="#top">To the top</a></div>
+</header>
+
+<p>To install a killer from the table below, follow <a href="#add_killers">these instructions</a>. The killers in the first part of the table are included in ClickToPlugin, but the versions posted here may be more recent.</p>
+
+<p>If you would like to share your own killers, you can do so by <a href="./#contact">contacting me</a> or directly on <a href="https://github.com/hoyois/plugin-to-html5">GitHub</a>.</p>
+
+<table>
+<thead>
+<tr>
+	<th></th>
+	<th>Applies to</th>
+	<th>Updated on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/BBC.js">BBC</a></td>
+	<td>Videos on bbc.co.uk</td>
+	<td><time datetime="2012-07-14">July 14, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Blip.js">Blip</a></td>
+	<td>On-site and embedded videos from blip.tv</td>
+	<td><time datetime="2012-01-07">January 7, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Break.js">Break</a></td>
+	<td>On-site and embedded videos from break.com</td>
+	<td><time datetime="2011-09-29">September 29, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Brightcove.js">Brightcove</a></td>
+	<td>Some instances of the common Brightcove Flash player</td>
+	<td><time datetime="2012-07-23">July 23, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/CollegeHumor.js">CollegeHumor</a></td>
+	<td>Videos from collegehumor.com</td>
+	<td><time datetime="2012-04-08">April 8, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Dailymotion.js">Dailymotion</a></td>
+	<td>On-site and embedded videos from dailymotion.com</td>
+	<td><time datetime="2012-08-06">August 6, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Facebook.js">Facebook</a></td>
+	<td>On-site and embedded videos from facebook.com</td>
+	<td><time datetime="2012-03-04">March 4, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Flash.js">Flash</a></td>
+	<td>Several generic Flash media players</td>
+	<td><time datetime="2012-09-30">September 30, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Generic.js">Generic</a></td>
+	<td>All HTML5-playable embedded media</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Metacafe.js">Metacafe</a></td>
+	<td>On-site and embedded videos from metacafe.com</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/MTVNetworks.js">MTVNetworks</a></td>
+	<td>Videos from mtv.com, colbertnation.com, thedailyshow.com, gametrailers.com, southparkstudios.com, and comedycentral.com</td>
+	<td><time datetime="2012-09-30">September 30, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Silverlight.js">Silverlight</a></td>
+	<td>Several generic Silverlight media players</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/TED.js">TED</a></td>
+	<td>On-site and embedded videos from ted.com</td>
+	<td><time datetime="2012-06-24">June 24, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Tumblr.js">Tumblr</a></td>
+	<td>Audio Flash player on tumblr.com</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Vimeo.js">Vimeo</a></td>
+	<td>On-site and embedded videos from vimeo.com</td>
+	<td><time datetime="2012-07-14">July 14, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/YouTube.js">YouTube</a></td>
+	<td>On-site and embedded videos and playlists from youtube.com</td>
+	<td><time datetime="2012-08-17">August 17, 2012</time></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/ВКонтакте.js">ВКонтакте</a></td>
+	<td>Videos on vk.com</td>
+	<td><time datetime="2012-08-13">August 13, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Bild.js">Bild</a></td>
+	<td>Videos on bild.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/BIM.js">BIM</a></td>
+	<td>Some versions of the BIMVid Flash player used by several news websites</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Eurogamer.js">Eurogamer</a></td>
+	<td>Videos on eurogamer.net</td>
+	<td><time datetime="2012-02-22">February 22, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Flowplayer.js">Flowplayer</a></td>
+	<td>Some instances of the common Flowplayer Flash player</td>
+	<td><time datetime="2012-07-23">July 23, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Gamestar.js">Gamestar</a></td>
+	<td>Videos on gamestar.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Golem.js">Golem</a></td>
+	<td>Videos on golem.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/ImbcNews.js">ImbcNews</a></td>
+	<td>Videos on news.mbc.co.kr</td>
+	<td><time datetime="2012-09-05">September 5, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Megavideo.js">Megavideo</a></td>
+	<td>On-site and embedded videos from megavideo.com</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Myspass.js">Myspass</a></td>
+	<td>Videos on myspass.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/NaverVideo.js">NaverVideo</a></td>
+	<td>On-site and embedded videos from naver.com</td>
+	<td><time datetime="2012-02-15">February 15, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Novamov.js">Novamov</a></td>
+	<td>On-site and embedded videos from novamov.com</td>
+	<td><time datetime="2012-02-15">February 15, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Sevenone.js">Sevenone</a></td>
+	<td>Videos on prosieben.de, kabeleins.de, sat1.de, and ran.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/SKCommsVideo.js">SKCommsVideo</a></td>
+	<td>On-site and embedded videos from video.nate.com, egloos.com, and video.cyworld.com</td>
+	<td><time datetime="2011-09-18">September 18, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Spiegel.js">Spiegel</a></td>
+	<td>Videos on www.spiegel.de</td>
+	<td><time datetime="2012-08-09">August 9, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/ThemisMedia.js">ThemisMedia</a></td>
+	<td>Themis Media Flash player</td>
+	<td><time datetime="2012-04-19">April 19, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/TvPot.js">TvPot</a></td>
+	<td>On-site and embedded videos from tvpot.daum.net</td>
+	<td><time datetime="2012-02-15">February 15, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Veoh.js">Veoh</a></td>
+	<td>On-site and embedded videos from veoh.com</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Vodpod.js">Vodpod</a></td>
+	<td>YouTube, Vimeo, and Blip.tv videos embedded through vodpod.com</td>
+	<td><time datetime="2012-07-14">July 14, 2012</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Welt.js">Welt</a></td>
+	<td>Videos on welt.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+<tr>
+	<td><a href="https://raw.github.com/hoyois/plugin-to-html5/master/Zeit.js">Zeit</a></td>
+	<td>Videos on zeit.de</td>
+	<td><time datetime="2011-09-16">September 16, 2011</time></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="add_killers">
+<header>
+<h2>How to add killers</h2>
+<div class="toplink"><a href="#top">To the top</a></div>
+</header>
+
+<p>To add a killer from the <a href="#database">database</a>, it suffices to add its URL to the “Plug-in to HTML5 conversion scripts” list in ClickToPlugin’s preferences (<a href ="support.xhtml#faq_preference_access">read how to access ClickToPlugin’s preferences</a>). It is however preferable to download the killer file to your computer first. This section describes how to add a local killer file <code>myKiller.js</code> to ClickToPlugin in OS X.</p>
+
+<h3>Step 1: Start Apache</h3>
+
+<p>If it is not already running, start the Apache server by turning on Web Sharing in Sharing preferences (<a href="help:anchor=mchlp1760-c">learn more</a>).</p>
+
+<h3>Step 2: Move the files into place</h3>
+
+<p>Place <code>myKiller.js</code> in <code>~/Sites/</code> or a subdirectory thereof. For this example we will create the subdirectory <code>~/Sites/CTP/</code> and place the file there.</p>
+
+<h3>Step 3: Set up ClickToPlugin</h3>
+
+<p>Open ClickToPlugin’s preferences and add <code>http://localhost/~username/CTP/myKiller.js</code> to the “Plug-in to HTML5 conversion scripts” list, where <code>username</code> must be replaced by your actual short user name (which is the name of your Home folder). Make sure to place the new script <em>before</em> the generic plug-in killers.</p>
+</section>
+
+<section id="create_killers">
+<header>
+<h2>How to create a killer</h2>
+<div class="toplink"><a href="#top">To the top</a></div>
+</header>
+
+<p>Killer files are included as scripts in the extension’s global page, using ClickToPlugin’s built-in <a href="../universalextension">universal extension</a>. In particular, all killer files share the same scope, so global definitions must be avoided.</p>
+
+<p>Here is a minimal killer file:</p>
+<pre>addKiller("Useless killer", {
+   "canKill": function(data) {return false;},
+   "process": function(data, callback) {}
+});</pre>
+
+<p>The first argument of the <code>addKiller</code> function serves as a unique identifier for the killer, which is the function’s second argument. The mandatory methods <a href="#cankill_method"><code>canKill</code></a> and <a href="#process_method"><code>process</code></a> are described below.</p>
+
+<p>Here is what an actual killer file looks like:</p>
+<pre>addKiller("GitHub", {
+   
+   "canKill": function(data) {
+      if(data.type !== "application/x-shockwave-flash") return false;
+      return data.src.indexOf("http://hoyois.github.com/") !== -1;
+   },
+
+   "process": function(data, callback) {
+      var flashvars = parseFlashVariables(data.params.flashvars);
+      if(!flashvars.mp4Source) return;
+   
+      callback({
+         "playlist": [{
+            "poster": decodeURIComponent(flashvars.previewImage),
+            "sources": [{
+               "url": decodeURIComponent(flashvars.mp4Source),
+               "isNative": true
+            }]
+         }]
+      });
+   }
+   
+});</pre>
+
+<p>This killer will process all Flash content hosted on this domain and offer a simple HTML5 alternative for those that have the <code>mp4Source</code> Flash variable.</p>
+
+<p>The <a href="#database">killers database</a> provides further examples with varying degrees of complexity.</p>
+
+<h3 id="cankill_method">The <code>canKill</code> method</h3>
+
+<p>The <code>canKill</code> method has a <a href="#plugin_data">plug-in data object</a> as argument and must return a boolean. This function should be kept as simple as possible, since it will be executed for every blocked plug-in object. If it returns <code>true</code>, ClickToPlugin stops evaluating the <code>canKill</code> methods of other killers and asynchronously runs the <code>process</code> method of this killer. Otherwise the plug-in data object is passed to the next killer’s <code>canKill</code> method. In particular, the <code>canKill</code> method should not modify its argument if it does not return <code>true</code>.</p>
+
+<h3 id="process_method">The <code>process</code> method</h3>
+
+<p>The <code>process</code> method has a <a href="#plugin_data">plug-in data object</a> and a function <code>callback</code> as arguments and does not return anything. To be successful, this method must apply the <code>callback</code> function to a <a href="#media_data">media data object</a>. This needs not happen in the body of the <code>process</code> method itself: for example, if the killer makes an HTTP request, the <code>callback</code> function will be called in the <code>onload</code> handler of the XMLHttpRequest object.</p>
+
+<h3 id="plugin_data">Plug-in data objects</h3>
+
+<p>The <em>same</em> object is passed as first argument to the <code>canKill</code> and <code>process</code> methods. It has the following properties:</p>
+<ul>
+	<li><code>src</code> is the source of the blocked resource as absolute URL. For the Flash plug-in, this is an SWF file, for the Silverlight plug-in an XAP file, etc.</li>
+	<li><code>type</code> is a the MIME type of the blocked resource, as determined by Safari.</li>
+	<li><code>location</code> is the address of the blocked plug-in’s document as an absolute URL.</li>
+	<li><code>title</code> is the <code>title</code> of the blocked plug-in’s document.</li>
+	<li><code>baseURL</code> is the base URL of the blocked plug-in’s document.</li>
+	<li><code>params</code> is an object containing the parameters to be passed to the plug-in. For example, Flash objects typically have a <code>flashvars</code> parameter, and Silverlight objects an <code>initparams</code> parameter.</li>
+</ul>
+
+<h3 id="media_data">Media data objects</h3>
+
+<p>A media data object contains data to be used by ClickToPlugin’s media player. The following minimal media data object will result in an HTML5 video element with <code>src</code> attribute set to <code>videoURL</code>:</p>
+<pre>{
+   "playlist": [{
+      "sources": [{
+         "url": videoURL
+      }]
+   }]
+}</pre>
+
+<p>The only mandatory property of a media data object is <code>playlist</code>, which is an array of media track objects.</p>
+
+<p>Each media track object can have the following properties:</p>
+<ul>
+	<li><code>sources</code> (mandatory) is an array of media source objects;</li>
+	<li><code>poster</code> is a URL to an image file to be used as poster image for the media element;</li>
+	<li><code>title</code> is the title of the track;</li>
+	<li><code>siteInfo</code> is an object that makes the “View on …” command appear in the shortcut menu. It has two mandatory properties:
+	<ul>
+		<li><code>name</code> is the name of the site displayed in the shortcut menu, e.g. <code>"YouTube"</code>;</li>
+		<li><code>url</code> is the absolute URL to open when the “View on …” command is used.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Each media source object can have the following properties:</p>
+<ul>
+	<li><code>url</code> (mandatory) is a URL to a media file that must be playable in Safari;</li>
+	<li><code>format</code> is the text that will appear in the source selector (it should be set if there are more than one source);</li>
+	<li><code>height</code> is a number approximating the native height in pixels of the video;</li>
+	<li><code>isNative</code> is a boolean which should be set to <code>true</code> only if the video file can be played without using third-party QuickTime components;</li>
+	<li><code>isAudio</code> can be set to <code>true</code> for an audio source; this causes the <code>poster</code> to be used as background image throughout playback.</li>
+</ul>
+
+<h3 id="available_methods">Available functions</h3>
+
+<p>The following functions form the interface between killers and ClickToPlugin.</p>
+<ul>
+	<li><code>addKiller(name, killer)</code> adds the object <code>killer</code> to the list of killers.</li>
+	<li><code>hasKiller(name)</code> returns a boolean indicating if the killer named <code>name</code> is loaded.</li>
+	<li><code>getKiller(name)</code> returns the killer object named <code>name</code>.</li>
+</ul>
+<p>ClickToPlugin also defines the following useful functions that can be used in killer files.</p>
+<ul>
+	<li><code>parseFlashVariables(flashvars)</code> returns a Flash object’s <code>flashvars</code> as a key–value object.</li>
+	<li><code>parseSLVariables(initparams)</code> returns a Silverlight object’s <code>initparams</code> as a key–value object.</li>
+	<li><code>unescapeHTML(text)</code> replaces HTML entities in <code>text</code> by the characters they represent and returns the result.</li>
+	<li><code>unescapeUnicode(text)</code> replaces any sequence of the form <code>\uxxxx</code> in <code>text</code> by the character with code <code>xxxx</code> and returns the result.</li>
+	<li><code>makeAbsoluteURL(url, base)</code> returns the resolution of the URL <code>url</code> with respect to <code>base</code>.</li>
+	<li><code>extractExt(url)</code> returns the extension of <code>url</code>.</li>
+	<li><code>typeInfo(type)</code> returns <code>null</code> if Safari cannot play the MIME type <code>type</code>, otherwise an object with three properties that can be used to build a media source object: <code>format</code>, <code>isNative</code>, and <code>isAudio</code>.</li>
+	<li><code>urlInfo(url)</code> has the same return values as <code>typeInfo</code> but based solely on the <code>url</code>’s extension.</li>
+	<li>The following predefined variables can be used when the data provided by <code>typeInfo</code> or <code>urlInfo</code> is not needed:
+	<ul>
+		<li><code>canPlayFLV</code>;</li>
+		<li><code>canPlayOgg</code>;</li>
+		<li><code>canPlayWebM</code>;</li>
+		<li><code>canPlayWM</code>.</li>
+	</ul>
+	</li>
+	<li><code>getMIMEType(resourceURL, handleMIMEType)</code> runs the function <code>handleMIMEType</code> with the MIME type of the resource <code>resourceURL</code> as argument.</li>
+	<li><code>parseXSPlaylist(playlistURL, baseURL, posterURL, startIndex, handleMediaData)</code> runs the function <code>handleMediaData</code> with argument a <a href="#media_data">media data object</a> obtained from the XSPF file <code>playlistURL</code>.</li>
+</ul>
+</section>
+
+<footer>
+<p id="footer_left">Marc Hoyois, <time datetime="2012-09-30">September 30, 2012</time></p>
+<p id="footer_right"><a href="#top">To the top</a></p>
+<p id="footer_middle"><a href="http://validator.nu/?doc=http%3A%2F%2Fhoyois.github.com%2Fsafariextensions%2Fclicktoplugin%2Fkillers.xhtml">XHTML5</a> • <a href="http://hoyois.github.com/html5outliner/?xml=true&amp;url=http%3A%2F%2Fhoyois.github.com%2Fsafariextensions%2Fclicktoplugin%2Fkillers.xhtml">Outline</a> • <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fhoyois.github.com%2Fstyles.css&amp;profile=css3&amp;usermedium=all&amp;warning=1">CSS3</a></p>
+</footer>
+
+</body>
+</html>
